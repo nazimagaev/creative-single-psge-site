@@ -1,0 +1,22 @@
+:root {
+  --color-red: #f94f4f;
+  --color-bg-black: #191921;
+  --color-white: #ffffff;
+  --color-text: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.container {
+    margin: 0 16.5rem;
+    max-width: 110rem;
+}
+
