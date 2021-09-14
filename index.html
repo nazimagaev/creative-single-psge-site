@@ -3,107 +3,102 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/favicon-32x32.png"
+      href="./images/favicon-32x32.png"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;800&display=swap"
-      rel="stylesheet"
-    />
-    <title>Frontend Mentor | Creative single page site</title>
+
+    <title>Frontend Mentor | Tip calculator app</title>
     <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="logo container">
-        <img src="./starter-code/assets/desktop/logo.svg" alt="Logo" />
-      </div>
-      <ul class="navbar__menu">
-        <li class="navbar__components">About</li>
-        <li class="navbar__components">Service</li>
-        <li class="navbar__components">Projects</li>
-        <button class="btn btn-1">Schedule a call</button>
-      </ul>
-    </nav>
+    <!-- <header><h1>SPLITTER</h1></header> -->
 
-    <header class="header">
-      <div class="header__content container">
-        <h1>Branding & website design agency</h1>
-        <p>We specialize in visual storytelling by creating cohesive brand and website design 
-          solutions for small businesses, giving lasting impressions to audiences in a digital world.</p>
-          <button class="btn btn-2">Learn more</button>
-      </div>
-      <div class="header__image">
-        <img src="./starter-code/assets/desktop/image-hero.jpg" alt="">
-      </div>
-    </header>
-    <section class="design">
-      <div class="design__image">
-        <img src="./starter-code/assets/desktop/image-strategic.jpg" alt="">
-      </div>
-      <div class="design__content">
-        <div class="design__design-h2">
-          <img src="./starter-code/assets/desktop/bg-pattern-wave-red.svg" class="design-wave" alt="">
-          <h2><span>Design</span> is strategic.</h2>
+    <main>
+      <div class="all-content">
+        <div class="left-content">
+          <div class="bill-area">
+            <h2>Bill</h2>
+            <input type="text" class="bill-area__input" />
+          </div>
+          <div class="tip-percent">
+            <h2>Select Tip %</h2>
+            <div class="tip-percent__btns">
+              <button class="tip-percent__btn">5</button>
+              <button class="tip-percent__btn">10</button>
+              <button class="tip-percent__btn">15</button>
+              <button class="tip-percent__btn">25</button>
+              <button class="tip-percent__btn">50</button>
+              <div class="custom-input-container">
+                <button class="tip-percent__btn custom">Custom</button>
+                <input type="text" class="custom-input" />
+              </div>
+            </div>
+          </div>
+          <div class="number-of-people">
+            <h2>Number of People</h2>
+            <input type="text" class="number-of-people__input" />
+          </div>
         </div>
-        <p>A well-crafted design strategy consistently produces desired outcomes and brand awareness. 
-          We are firm believers that success lies in creative collaboration with our clients.</p>
-          <button class="btn btn-3">Schedule a call</button>
+
+        <div class="right-content">
+          <div class="tip-amount">
+            <div class="tip-amount__text">
+              <h2>Tip Amount</h2>
+              <p>/ person</p>
+            </div>
+            <div class="tip-amount__number">
+              <h3>$ 0.00</h3>
+            </div>
+          </div>
+          <div class="total-amount">
+            <div class="total-amount__text">
+              <h2>Total</h2>
+              <p>/ person</p>
+            </div>
+            <div class="total-amount__number">
+              <h3>$ 0.00</h3>
+            </div>
+          </div>
+          <button class="reset">Reset</button>
+        </div>
       </div>
-    </section>
+    </main>
+    <script src="./app.js"></script>
   </body>
 </html>
 
-<!-- About
-Service
-Projects
+<!-- Bill
 
-Schedule a call
+Select Tip %
+5%
+10%
+15%
+25%
+50%
+Custom
 
-Branding & website design agency
+Number of People
 
-We specialize in visual storytelling by creating cohesive brand and website design 
-solutions for small businesses, giving lasting impressions to audiences in a digital world.
+Tip Amount
+/ person
 
-Learn more
+Total
+/ person
 
-Design is strategic.
-
-A well-crafted design strategy consistently produces desired outcomes and brand awareness. 
-We are firm believers that success lies in creative collaboration with our clients.
-
-Schedule a call
-
-Our approach for creating a winning brand
-
-01 Brand strategy
-Brand strategy is critical for long-term success. Outshining competitors and capturing 
-the target audience are key.
-
-02 Brand design
-Keeping the brand design unique and meaningful helps in communicating the brand’s timeless 
-value effectively.
-
-03 Web design
-A beautifully crafted website is the best tool for brand awareness, and ultimately results 
-in increased revenues.
-
-Brand naming & guidelines
-Lean Product Roadmap 
-2019 project
-
-Brand identity & merchandise
-New Majestic Hotel 
-2018 Project
-
-Brand identity & web design
-Crypto Dashboard
-2016 Project
-
-Let's build something great together.
-
-Schedule a Call -->
+Reset -->

@@ -1,8 +1,8 @@
 :root {
-  --color-red: #f94f4f;
-  --color-bg-black: #191921;
-  --color-white: #ffffff;
-  --color-text: #000000;
+  --color-bgc: #c5e4e7;
+  --color-dark: #00474b;
+  --color-white: #f3f9fa;
+  --color-text: #26c2ae;
 }
 
 * {
@@ -20,136 +20,211 @@ html {
   max-width: 110rem;
 }
 
-.logo {
-  margin-top: 7.6rem;
-}
-
-.btn-1 {
-  padding: 2rem 4.5rem;
-  background: #191921;
-  font-family: "Commissioner";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  border: none;
-}
-
-.btn-2 {
-  background: #f94f4f;
-  padding: 2rem 3rem;
-  border: none;
-  font-family: "Commissioner";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 22px;
-  color: #ffffff;
-}
-
-.btn-3 {
-  font-family: "Commissioner";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 22px;
-  color: #f94f4f;
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid red;
-  padding-bottom: 0.8rem;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-}
-.navbar__menu {
+body {
+  background-color: var(--color-bgc);
   display: flex;
   align-items: center;
-  list-style: none;
-  background-color: #f94f4f;
-  padding: 5.6rem 16.5rem 7rem 12rem;
-}
-.navbar__components {
-  margin-right: 3.2rem;
-  font-family: "Commissioner";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 32px;
-  color: #ffffff;
+  justify-content: center;
+  height: 100vh;
 }
 
-.header {
+.custom-input {
+  display: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: right;
+  border-radius: 5px;
+  width: 11.8rem;
+  height: 4.8rem;
+  border: 3px solid #62d462;
+  color: #547878;
+}
+
+.custom-input-container {
+  display: inline-block;
+}
+
+.all-content {
+  margin: 0 auto;
+  width: 920px;
+  height: 481px;
+  background: #ffffff;
+  box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+  border-radius: 25px;
   display: flex;
-  justify-content: space-around;
+  padding: 3.2rem;
 }
-.header__content {
-  z-index: 10;
-  margin-right: -10rem;
+
+.left-content {
+  width: 413px;
+  height: 417px;
+  margin-right: 5rem;
 }
-.header__content h1 {
-  font-family: "Commissioner";
+.left-content .bill-area h2 {
+  font-family: "Space Mono";
   font-style: normal;
-  font-weight: 800;
-  font-size: 80px;
-  line-height: 88px;
-  color: #000000;
-  margin-top: 11rem;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5e7a7d;
 }
-.header__content p {
-  font-family: "Commissioner";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 32px;
-  color: #000000;
+.left-content .bill-area__input {
+  background: #f3f9fa;
+  border-radius: 5px;
+  text-align: right;
+  border: none;
+  width: 100%;
+  height: 5rem;
+}
+.left-content .tip-percent {
   margin-top: 4rem;
-  margin-bottom: 5rem;
-}
-.header__image {
-  z-index: -2;
-  max-width: 100%;
-}
-
-.design {
-  display: flex;
-  justify-content: space-between;
-  background-color: #191921;
-  align-items: center;
-}
-.design__content {
-  margin-right: 10.5rem;
-}
-.design__content p {
-  font-family: "Commissioner";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  color: #ffffff;
-  margin-bottom: 5rem;
-  width: 445px;
-  height: 128px;
-}
-.design__design-h2 {
-  display: flex;
-  align-items: center;
-}
-.design__design-h2 h2 {
-  font-family: "Commissioner";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 56px;
-  line-height: 64px;
-  color: #ffffff;
-  width: 410px;
-  height: 133px;
   margin-bottom: 4rem;
 }
-.design__design-h2 h2 span {
-  color: #f94f4f;
+.left-content .tip-percent h2 {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5e7a7d;
+  margin-bottom: 1.6rem;
+}
+.left-content .tip-percent__btn {
+  width: 12rem;
+  height: 5rem;
+  background: #00474b;
+  border-radius: 5px;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  cursor: pointer;
+  color: #ffffff;
+}
+.left-content .tip-percent .custom {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  background: #f3f9fa;
+  border-radius: 5px;
+  color: #547878;
+}
+.left-content .tip-percent .tip-percent__btn-active {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  background: #26c2ae;
+  border-radius: 5px;
+  text-align: center;
+  color: #00474b;
+}
+.left-content .number-of-people h2 {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5e7a7d;
+}
+.left-content .number-of-people__input {
+  width: 100%;
+  height: 5rem;
+  background: #f3f9fa;
+  border-radius: 5px;
+  border: none;
+  text-align: right;
+}
+
+.right-content {
+  padding: 4rem;
+  background: #00474b;
+  border-radius: 15px;
+  width: 413px;
+  height: 417px;
+}
+.right-content .tip-amount {
+  margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.right-content .tip-amount__text h2 {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.right-content .tip-amount__text p {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 19px;
+  color: #7f9d9f;
+}
+.right-content .tip-amount__number {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 71px;
+  text-align: right;
+  letter-spacing: -1px;
+  color: #26c2ae;
+}
+.right-content .total-amount {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.right-content .total-amount__text h2 {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.right-content .total-amount__text p {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 19px;
+  color: #7f9d9f;
+}
+.right-content .total-amount__number {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 71px;
+  text-align: right;
+  letter-spacing: -1px;
+  color: #26c2ae;
+}
+.right-content .reset {
+  margin-top: 12rem;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #00474b;
+  background: #26c2ae;
+  border-radius: 5px;
+  padding: 9px 15rem;
+  border: none;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

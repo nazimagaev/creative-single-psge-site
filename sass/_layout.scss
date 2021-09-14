@@ -1,98 +1,221 @@
-.navbar {
+.all-content {
+  margin: 0 auto;
+  width: 920px;
+  height: 481px;
+  background: #ffffff;
+  box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+  border-radius: 25px;
+
   display: flex;
-  justify-content: space-between;
 
-  &__menu {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    background-color: #f94f4f;
-    padding: 5.6rem 16.5rem 7rem 12rem;
-  }
-
-  &__components {
-    margin-right: 3.2rem;
-    font-family: "Commissioner";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 32px;
-    color: #ffffff;
-  }
+  padding: 3.2rem;
 }
 
-.header {
-  display: flex;
-  justify-content: space-around;
+.left-content {
+  width: 413px;
+  height: 417px;
 
-  &__content {
-    z-index: 10;
-    margin-right: -10rem;
-    h1 {
-      font-family: "Commissioner";
-      font-style: normal;
-      font-weight: 800;
-      font-size: 80px;
-      line-height: 88px;
-      color: #000000;
-      margin-top: 11rem;
-    }
-    p {
-      font-family: "Commissioner";
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 32px;
-      color: #000000;
-      margin-top: 4rem;
-      margin-bottom: 5rem;
-    }
-  }
+  margin-right: 5rem;
 
-  &__image {
-    z-index: -2;
-    max-width: 100%;
-  }
-}
-
-.design {
-  display: flex;
-  justify-content: space-between;
-  background-color: #191921;
-  align-items: center;
-  &__content {
-      margin-right: 10.5rem;
-    p {
-      font-family: "Commissioner";
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      color: #ffffff;
-      margin-bottom: 5rem;
-
-      width: 445px;
-      height: 128px;
-    }
-  }
-  &__design-h2 {
-    display: flex;
-    align-items: center;
+  .bill-area {
     h2 {
-      font-family: "Commissioner";
+      font-family: "Space Mono";
       font-style: normal;
-      font-weight: 800;
-      font-size: 56px;
-      line-height: 64px;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+      color: #5e7a7d;
+    }
+
+    &__input {
+      background: #f3f9fa;
+      border-radius: 5px;
+
+      text-align: right;
+
+      border: none;
+      width: 100%;
+      height: 5rem;
+    }
+  }
+
+  .tip-percent {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    h2 {
+      font-family: "Space Mono";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+      color: #5e7a7d;
+
+      margin-bottom: 1.6rem;
+    }
+
+    &__btn {
+      width: 12rem;
+      height: 5rem;
+      background: #00474b;
+      border-radius: 5px;
+
+      font-family: "Space Mono";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center;
+
+      cursor: pointer;
 
       color: #ffffff;
+    }
+    .custom {
+      // font-family: Space Mono;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 36px;
 
-      width: 410px;
-      height: 133px;
-    //   margin-top: 20rem;
-      margin-bottom: 4rem;
-      span {
-        color: #f94f4f;
+      background: #f3f9fa;
+      border-radius: 5px;
+
+      color: #547878;
+    }
+
+    .tip-percent__btn-active {
+      font-family: "Space Mono";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 36px;
+      background: #26c2ae;
+      border-radius: 5px;
+
+      text-align: center;
+
+      color: #00474b;
+    }
+  }
+
+  .number-of-people {
+    h2 {
+      font-family: "Space Mono";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+      color: #5e7a7d;
+    }
+    &__input {
+      width: 100%;
+      height: 5rem;
+      background: #f3f9fa;
+      border-radius: 5px;
+      border: none;
+
+      text-align: right;
+
+    }
+  }
+}
+
+.right-content {
+  padding: 4rem;
+  background: #00474b;
+  border-radius: 15px;
+  width: 413px;
+  height: 417px;
+
+  .tip-amount {
+    margin-bottom: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    // text-align: center;
+    &__text {
+      h2 {
+        font-family: "Space Mono";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        color: #ffffff;
+      }
+      p {
+        font-family: "Space Mono";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 19px;
+
+        color: #7f9d9f;
       }
     }
+    &__number {
+      font-family: "Space Mono";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 71px;
+      text-align: right;
+      letter-spacing: -1px;
+
+      color: #26c2ae;
+    }
+  }
+
+  .total-amount {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    &__text {
+      h2 {
+        font-family: "Space Mono";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        color: #ffffff;
+      }
+      p {
+        font-family: "Space Mono";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 19px;
+
+        color: #7f9d9f;
+      }
+    }
+    &__number {
+      font-family: "Space Mono";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 71px;
+      text-align: right;
+      letter-spacing: -1px;
+
+      color: #26c2ae;
+    }
+  }
+  .reset {
+    margin-top: 12rem;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+
+    color: #00474b;
+
+    background: #26c2ae;
+    border-radius: 5px;
+
+    padding: 9px 15rem;
+    border: none;
+
+    cursor: pointer;
   }
 }
